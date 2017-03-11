@@ -8,10 +8,10 @@ namespace Domain
 {
     public class Employee
     {
-        private int _salary;
-        public int Salary {
+        private double _salary;
+        public double Salary {
             get { return _salary; }
-            set { _salary = (int)(value * .87); }
+            set { _salary = value * .87; }
         }
     }
 }
