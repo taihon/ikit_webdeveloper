@@ -8,6 +8,10 @@ namespace Domain
 {
     public class Employee
     {
-        public double Salary { get; set; }
+        private double _salary;
+        public double Salary {
+            get { return _salary; }
+            set { _salary = value * .87; }
+        }
     }
 }
