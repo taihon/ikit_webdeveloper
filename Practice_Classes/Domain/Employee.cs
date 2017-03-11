@@ -9,9 +9,17 @@ namespace Domain
     public class Employee
     {
         private double _salary;
+        private string _name;
         public double Salary {
             get { return SalaryCountHelper.SetSalary(_salary); }
             set { _salary = value; }
+        }
+        public string Name {
+            get { return _name; }
+            set {
+                if (string.IsNullOrEmpty(_name))
+                    _name = value;
+            }
         }
     }
     public static class SalaryCountHelper
