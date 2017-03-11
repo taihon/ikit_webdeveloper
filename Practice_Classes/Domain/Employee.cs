@@ -10,8 +10,15 @@ namespace Domain
     {
         private double _salary;
         public double Salary {
-            get { return _salary; }
-            set { _salary = value * .87; }
+            get { return SalaryCountHelper.SetSalary(_salary); }
+            set { _salary = value; }
+        }
+    }
+    public static class SalaryCountHelper
+    {
+        public static double SetSalary(double salary)
+        {
+            return salary * .87;
         }
     }
 }
