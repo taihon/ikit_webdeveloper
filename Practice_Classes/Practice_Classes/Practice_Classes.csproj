@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{adf18454-aca0-45f4-b794-e5ec5b2f99ae}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{9ae1e2d8-0104-4594-a732-d15c2712a0b3}</Project>
       <Name>Domain</Name>
