@@ -21,6 +21,8 @@ namespace Domain
                     _name = value;
             }
         }
+        private int _yearOfBirth = 1989;
+        public int Age { get { return DateTime.Now.Year - _yearOfBirth; } }
     }
     public static class SalaryCountHelper
     {
