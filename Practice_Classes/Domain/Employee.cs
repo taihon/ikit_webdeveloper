@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public class Class1
+    public class Employee
     {
+        private int _salary;
+        public int Salary {
+            get { return _salary; }
+            set { _salary = (int)(value * .87); }
+        }
     }
 }
