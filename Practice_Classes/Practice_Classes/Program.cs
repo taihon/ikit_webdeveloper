@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,9 @@ namespace Practice_Classes
     {
         static void Main(string[] args)
         {
+            var empl = new Employee();
+            empl.Salary = 5000;
+            Console.WriteLine("Salary: "+empl.Salary);
         }
     }
 }
