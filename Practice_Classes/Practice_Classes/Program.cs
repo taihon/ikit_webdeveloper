@@ -14,6 +14,7 @@ namespace Practice_Classes
             var empl = new Employee();
             empl.Salary = 5000;
             Console.WriteLine("Salary: "+empl.Salary);
+            Console.WriteLine("Age: "+empl.Age);
         }
     }
 }
