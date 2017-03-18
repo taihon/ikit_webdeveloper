@@ -42,8 +42,10 @@
   <ItemGroup>
     <Compile Include="AirCraft.cs" />
     <Compile Include="Auto.cs" />
+    <Compile Include="Bicycle.cs" />
     <Compile Include="Car.cs" />
     <Compile Include="Drone.cs" />
+    <Compile Include="ITouristTransport.cs" />
     <Compile Include="Plane.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Truck.cs" />

@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain
+namespace TouristView
 {
-    public class Drone:AirCraft
+    class Program
     {
-        public override string Fly()
+        static void Main(string[] args)
         {
-            return base.Fly();
         }
     }
 }
