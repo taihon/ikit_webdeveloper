@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public class Drone:AirCraft
+    public class Drone:AirCraft, ITouristTransport
     {
         public override string Fly()
         {
             return base.Fly();
+        }
+
+        string ITouristTransport.Move()
+        {
+            return Fly();
         }
     }
 }

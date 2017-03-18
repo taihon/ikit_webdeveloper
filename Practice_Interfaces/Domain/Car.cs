@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public class Car : Auto
+    public class Car : Auto, ITouristTransport
     {
         public override string Drive()
         {
             return base.Drive() + Environment.NewLine +
                 "Drive carefully, you're not a Truck";
+        }
+
+        string ITouristTransport.Move()
+        {
+            return Drive();
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BL;
+using Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +12,8 @@ namespace TouristView
     {
         static void Main(string[] args)
         {
+            ITouristTransport t = new Car();
+            Dispatcher.Move(t);
         }
     }
 }
