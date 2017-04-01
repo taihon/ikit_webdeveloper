@@ -14,6 +14,7 @@ namespace Domain
             T animal = new T();
             animal.IAmHungry += zoo.mgr.OnHungry;
             animal.Name = name;
+            zoo.vet.VaccinationDay += animal.OnVaccination;
             return animal;
         }
     }

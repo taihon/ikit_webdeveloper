@@ -11,6 +11,7 @@ namespace Domain
         
         public string Name { get; set; }
         public virtual void Hungry() { }
+        public virtual void OnVaccination(object obj, EventArgs args) { }
     }
     public delegate void HungryHandler(Animal sender, HungryEventArgs args);
     public class HungryEventArgs : EventArgs
@@ -25,7 +26,11 @@ namespace Domain
         {
             Name = name;
         }
-
+        public override void OnVaccination(object obj, EventArgs args)
+        {
+            Console.WriteLine($"{Name}: I'm tired, I'm leaving");
+            base.OnVaccination(obj, args);
+        }
         public event HungryHandler IAmHungry;
 
         public override void Hungry()

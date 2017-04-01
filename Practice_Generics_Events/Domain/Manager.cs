@@ -16,6 +16,10 @@ namespace Domain
     }
     public class Vet
     {
-
+        public event EventHandler VaccinationDay;
+        public void BeginVaccination()
+        {
+            VaccinationDay?.Invoke(this, EventArgs.Empty);
+        }
     }
 }
