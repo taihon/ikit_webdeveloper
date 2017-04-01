@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,8 @@ namespace Practice_Generics_Events
     {
         static void Main(string[] args)
         {
+            AnimalFactory<Horse> factory = new AnimalFactory<Horse>();
+            var horse = factory.Create();
         }
     }
 }
