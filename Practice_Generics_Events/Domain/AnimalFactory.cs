@@ -9,9 +9,12 @@ namespace Domain
     public class AnimalFactory<T> 
         where T : Animal, IZooAnimal, new()
     {
-        public T Create()
+        public T Create(string name, Zoo zoo)
         {
-            return new T();
+            T animal = new T();
+            animal.IAmHungry += zoo.mgr.OnHungry;
+            animal.Name = name;
+            return animal;
         }
     }
 }
