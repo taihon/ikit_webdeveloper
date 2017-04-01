@@ -14,4 +14,8 @@ namespace Domain
             Console.WriteLine($"Fine. We'll bring {args.FoodAmount} of {foodType}");
         }
     }
+    public class Vet
+    {
+
+    }
 }
