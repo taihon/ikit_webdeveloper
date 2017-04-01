@@ -10,12 +10,16 @@ namespace Domain
     {
         public string Name { get; set; }
     }
-    public class Horse : Animal
+    public class Horse : Animal, IZooAnimal
     {
-        private Horse() { }
+        public Horse() { }
         public Horse(string name)
         {
             Name = name;
         }
+    }
+    public interface IZooAnimal
+    {
+
     }
 }
