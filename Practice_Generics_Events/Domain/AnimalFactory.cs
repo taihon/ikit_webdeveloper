@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Domain
 {
     public class AnimalFactory<T> 
-        where T : Animal, new()
+        where T : Animal, IZooAnimal, new()
     {
         public T Create()
         {
