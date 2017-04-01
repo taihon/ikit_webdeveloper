@@ -8,5 +8,14 @@ namespace Domain
 {
     public abstract class Animal
     {
+        public string Name { get; set; }
+    }
+    public class Horse : Animal
+    {
+        private Horse() { }
+        public Horse(string name)
+        {
+            Name = name;
+        }
     }
 }
