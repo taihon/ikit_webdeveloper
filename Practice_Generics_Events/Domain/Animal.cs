@@ -8,7 +8,15 @@ namespace Domain
 {
     public abstract class Animal
     {
+        
         public string Name { get; set; }
+        public virtual void Hungry() { }
+    }
+    public delegate void HungryHandler(Animal sender, HungryEventArgs args);
+    public class HungryEventArgs : EventArgs
+    {
+        public bool IsMeatEater { get; set; }
+        public int FoodAmount { get; set; }
     }
     public class Horse : Animal, IZooAnimal
     {
@@ -17,9 +25,22 @@ namespace Domain
         {
             Name = name;
         }
+
+        public event HungryHandler IAmHungry;
+
+        public override void Hungry()
+        {
+                IAmHungry?
+                    .Invoke(this, 
+                        new HungryEventArgs
+                        {
+                            FoodAmount =10,
+                            IsMeatEater = false
+                        });
+        }
     }
     public interface IZooAnimal
     {
-
+        event HungryHandler IAmHungry;
     }
 }
