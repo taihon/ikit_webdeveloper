@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice_Reflexion", "Practice_Reflexion\Practice_Reflexion.csproj", "{4D1C5D8D-E94C-4272-B488-F6C766DC653E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflexiveLibrary", "ReflexiveLibrary\ReflexiveLibrary.csproj", "{8F240AC3-8314-4B45-8C0D-2F063404BD5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{681E8921-3A74-471B-BBC5-9C9282B4D23C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D1C5D8D-E94C-4272-B488-F6C766DC653E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D1C5D8D-E94C-4272-B488-F6C766DC653E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D1C5D8D-E94C-4272-B488-F6C766DC653E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D1C5D8D-E94C-4272-B488-F6C766DC653E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F240AC3-8314-4B45-8C0D-2F063404BD5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F240AC3-8314-4B45-8C0D-2F063404BD5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F240AC3-8314-4B45-8C0D-2F063404BD5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F240AC3-8314-4B45-8C0D-2F063404BD5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{681E8921-3A74-471B-BBC5-9C9282B4D23C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{681E8921-3A74-471B-BBC5-9C9282B4D23C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{681E8921-3A74-471B-BBC5-9C9282B4D23C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{681E8921-3A74-471B-BBC5-9C9282B4D23C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
